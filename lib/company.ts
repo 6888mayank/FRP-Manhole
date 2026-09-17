@@ -134,7 +134,7 @@ export const products: Product[] = [
     id: 'inspection-covers',
     name: 'FRP Inspection Covers',
     description: 'FRP inspection covers designed for easy access and long-term performance in utility and industrial environments.',
-    image: 'https://images.pexels.com/photos/3964559/pexels-photo-3964559.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/frp-inspection-cover.jpg',
     features: ['Easy Access', 'Durable', 'Corrosion Resistant', 'Precise Fit'],
   },
   {
