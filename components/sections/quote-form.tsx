@@ -190,7 +190,7 @@ export function QuoteForm() {
                     <Input
                       value={form.phone}
                       onChange={(e) => updateField('phone', e.target.value)}
-                      placeholder="+91 98765 43210"
+                      placeholder="+91 70826 69618"
                       className="bg-white/10 border-white/25 text-white placeholder:text-white/60 focus-visible:ring-accent/50"
                     />
                     {errors.phone && <p className="text-red-400 text-xs">{errors.phone}</p>}

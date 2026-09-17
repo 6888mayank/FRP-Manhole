@@ -75,12 +75,12 @@ export const company = {
   name: 'BOSS FRP MANHOLES',
   tagline: 'Stronger | Lighter | Durable',
   positioning: 'Engineered FRP Solutions for Modern Infrastructure',
-  phone: '+91 98765 43210',
-  phoneHref: 'tel:+919876543210',
-  whatsapp: '919876543210',
-  email: 'info@bossfrpmanholes.com',
-  emailHref: 'mailto:info@bossfrpmanholes.com',
-  address: 'Plot No. 45, Industrial Area Phase II, New Delhi 110020, India',
+  phone: '+91 70826 69618',
+  phoneHref: 'tel:+917082669618',
+  whatsapp: '917082669618',
+  email: 'rkchemicals8181@gmail.com',
+  emailHref: 'mailto:rkchemicals8181@gmail.com',
+  address: 'Ward No- 10, Near Gali India, Village Jakhopur, Mohammadpur Gujar, Gurugram, Haryana - 122103',
   businessHours: 'Mon - Sat: 9:00 AM - 6:00 PM',
 };
 

@@ -89,7 +89,7 @@ export function Contact() {
                 <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/15 flex items-center justify-center mx-auto mb-4">
                   <MapPin className="w-7 h-7 text-primary" />
                 </div>
-                <h3 className="font-bold text-foreground">Industrial Area Phase II, New Delhi</h3>
+                <h3 className="font-bold text-foreground">Mohammadpur Gujar, Gurugram</h3>
                 <p className="mt-2 text-sm text-muted-foreground max-w-sm mx-auto leading-relaxed">
                   {company.address}. Search &quot;BOSS FRP MANHOLES&quot; on Google Maps for directions.
                 </p>
