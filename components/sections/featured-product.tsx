@@ -40,12 +40,14 @@ export function FeaturedProduct() {
               <div className="absolute w-[260px] h-[260px] md:w-[320px] md:h-[320px] rounded-full border border-white/5" />
             </div>
 
-            {/* Product image - real FRP cover */}
-            <div className="relative z-10">
+            {/* Product image - real signature FRP cover */}
+            <div className="relative z-10 group">
               <img
-                src="/frp-cover.png"
-                alt="FRP manhole cover DIA 560 2.5T - signature product by BOSS FRP MANHOLES"
-                className="w-[280px] h-[280px] md:w-[360px] md:h-[360px] object-cover rounded-full shadow-2xl border-4 border-white/10 bg-[#d4c5a5]"
+                src="/frp-cover-signature.png"
+                alt="FRP Manhole Cover DIA 560 2.5T — R.K. Signature Product by BOSS FRP MANHOLES"
+                width={792}
+                height={792}
+                className="w-[280px] h-[280px] md:w-[380px] md:h-[380px] object-contain rounded-full shadow-2xl shadow-black/80 border-4 border-white/20 drop-shadow-[0_25px_40px_rgba(0,0,0,0.8)] transition-transform duration-700 group-hover:scale-105"
               />
             </div>
 
