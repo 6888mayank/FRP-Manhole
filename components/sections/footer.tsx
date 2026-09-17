@@ -47,9 +47,16 @@ export function Footer() {
           <div>
             <h3 className="text-white font-bold text-sm tracking-widest uppercase mb-4">Contact</h3>
             <ul className="space-y-3">
-              <li className="flex gap-3 text-sm">
-                <MapPin className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-white/85 leading-relaxed">{company.address}</span>
+              <li>
+                <a
+                  href={company.mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex gap-3 text-sm text-white/85 hover:text-accent transition-colors font-medium leading-relaxed group"
+                >
+                  <MapPin className="w-4 h-4 text-accent flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
+                  <span>{company.address}</span>
+                </a>
               </li>
               <li>
                 <a href={company.phoneHref} className="flex gap-3 text-sm text-white/85 hover:text-accent transition-colors font-medium">

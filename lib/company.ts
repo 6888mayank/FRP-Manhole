@@ -81,6 +81,11 @@ export const company = {
   email: 'rkchemicals8181@gmail.com',
   emailHref: 'mailto:rkchemicals8181@gmail.com',
   address: 'Ward No- 10, Near Gali India, Village Jakhopur, Mohammadpur Gujar, Gurugram, Haryana - 122103',
+  mapUrl: 'https://maps.google.com/?q=28.229321,77.068321',
+  coordinates: {
+    lat: 28.229321,
+    lng: 77.068321,
+  },
   businessHours: 'Mon - Sat: 9:00 AM - 6:00 PM',
 };
 

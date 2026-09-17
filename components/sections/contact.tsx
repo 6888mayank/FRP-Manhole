@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MapPin, Phone, Mail, Clock, MessageCircle } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle, ExternalLink } from 'lucide-react';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { company } from '@/lib/company';
 
@@ -25,17 +25,25 @@ export function Contact() {
             transition={{ duration: 0.6 }}
             className="flex flex-col gap-4"
           >
-            <div className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm">
+            <a
+              href={company.mapUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-2xl border border-border/60 bg-card p-6 shadow-sm hover:border-accent/30 transition-colors group block"
+            >
               <div className="flex gap-4">
-                <span className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/15 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-5 h-5 text-primary" />
+                <span className="w-10 h-10 rounded-xl bg-primary/10 border border-primary/15 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/15 transition-colors">
+                  <MapPin className="w-5 h-5 text-primary group-hover:text-accent transition-colors" />
                 </span>
                 <div>
-                  <h3 className="font-bold text-foreground tracking-tight">Factory / Office Address</h3>
+                  <div className="flex items-center gap-2">
+                    <h3 className="font-bold text-foreground tracking-tight group-hover:text-primary transition-colors">Factory / Office Address</h3>
+                    <ExternalLink className="w-3.5 h-3.5 text-muted-foreground group-hover:text-accent transition-colors" />
+                  </div>
                   <p className="mt-1.5 text-sm text-muted-foreground leading-relaxed">{company.address}</p>
                 </div>
               </div>
-            </div>
+            </a>
 
             <div className="grid sm:grid-cols-2 gap-4">
               <a
@@ -82,29 +90,32 @@ export function Contact() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-50px' }}
             transition={{ duration: 0.6, delay: 0.15 }}
-            className="rounded-2xl overflow-hidden border border-border/60 bg-card shadow-sm min-h-[380px] flex flex-col"
+            className="rounded-2xl overflow-hidden border border-border/60 bg-card shadow-sm min-h-[420px] flex flex-col"
           >
-            <div className="flex-1 bg-secondary/40 flex items-center justify-center p-8 text-center">
-              <div>
-                <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/15 flex items-center justify-center mx-auto mb-4">
-                  <MapPin className="w-7 h-7 text-primary" />
-                </div>
-                <h3 className="font-bold text-foreground">Mohammadpur Gujar, Gurugram</h3>
-                <p className="mt-2 text-sm text-muted-foreground max-w-sm mx-auto leading-relaxed">
-                  {company.address}. Search &quot;BOSS FRP MANHOLES&quot; on Google Maps for directions.
-                </p>
-                <a
-                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(company.address)}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex mt-5 text-sm font-semibold text-primary hover:text-primary/80 transition-colors"
-                >
-                  Open in Google Maps →
-                </a>
-              </div>
+            {/* Interactive Google Map Embed */}
+            <div className="relative flex-1 min-h-[340px] w-full bg-secondary/30">
+              <iframe
+                title="BOSS FRP MANHOLES Location"
+                src={`https://maps.google.com/maps?q=${company.coordinates.lat},${company.coordinates.lng}&hl=en&z=15&output=embed`}
+                className="w-full h-full border-0 absolute inset-0"
+                loading="lazy"
+                allowFullScreen
+                referrerPolicy="no-referrer-when-downgrade"
+              />
             </div>
-            <div className="px-6 py-4 bg-charcoal text-white/70 text-xs text-center tracking-wide" style={{ ['--charcoal' as string]: '210 20% 10%' }}>
-              {company.name} — {company.tagline}
+            <div className="px-6 py-4 bg-charcoal flex flex-col sm:flex-row items-center justify-between gap-3 text-xs" style={{ ['--charcoal' as string]: '210 20% 10%' }}>
+              <div className="text-white/85 font-medium text-center sm:text-left">
+                <span className="font-bold text-white">{company.name}</span> — Mohammadpur Gujar, Gurugram
+              </div>
+              <a
+                href={company.mapUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-accent text-white font-semibold hover:bg-accent/90 transition-colors shadow-sm"
+              >
+                <span>Open in Google Maps</span>
+                <ExternalLink className="w-3.5 h-3.5" />
+              </a>
             </div>
           </motion.div>
         </div>
