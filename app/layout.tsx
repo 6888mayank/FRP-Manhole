@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   description:
     'BOSS FRP MANHOLES manufactures high-performance FRP manhole covers, drainage covers and customized FRP infrastructure solutions designed for strength, durability and easy handling.',
   icons: {
-    icon: '/logo.png',
-    shortcut: '/logo.png',
-    apple: '/logo.png',
+    icon: '/logo-icon.png',
+    shortcut: '/logo-icon.png',
+    apple: '/logo-icon.png',
   },
   keywords: [
     'FRP manhole covers',
