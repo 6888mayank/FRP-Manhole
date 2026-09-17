@@ -141,7 +141,7 @@ export const products: Product[] = [
     id: 'chamber-covers',
     name: 'FRP Chamber Covers',
     description: 'Reliable FRP chamber covers for electrical, telecom, drainage and utility infrastructure.',
-    image: 'https://images.pexels.com/photos/18502586/pexels-photo-18502586.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/frp-chamber-cover.jpg',
     features: ['Electrical Grade', 'Telecom Ready', 'Non-Conductive', 'Custom Fit'],
   },
   {
