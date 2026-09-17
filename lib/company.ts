@@ -160,7 +160,7 @@ export const products: Product[] = [
     id: 'custom-frp',
     name: 'Custom FRP Products',
     description: 'Customized FRP solutions manufactured according to required dimensions, design and application.',
-    image: 'https://images.pexels.com/photos/236748/pexels-photo-236748.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/custom-frp-bg.jpg',
     features: ['Custom Dimensions', 'Custom Design', 'Application Specific', 'Project Based'],
   },
 ];

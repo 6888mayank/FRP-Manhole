@@ -18,12 +18,12 @@ export function CustomizationCTA() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.pexels.com/photos/236748/pexels-photo-236748.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="FRP manufacturing facility - custom FRP products"
-          className="w-full h-full object-cover"
+          src="/custom-frp-bg.jpg"
+          alt="Custom BOSS FRP EN124 D400 Φ900 manhole cover"
+          className="w-full h-full object-cover object-right md:object-center"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-charcoal via-charcoal/90 to-charcoal/70" style={{ ['--charcoal' as string]: '210 20% 10%' }} />
-        <div className="absolute inset-0 bg-grid-dark opacity-30" />
+        <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-charcoal via-charcoal/70 to-transparent" style={{ ['--charcoal' as string]: '210 20% 10%' }} />
+        <div className="absolute inset-0 bg-grid-dark opacity-20" />
       </div>
 
       <div className="relative z-10 mx-auto max-w-[1400px] px-4 sm:px-6 lg:px-8">
