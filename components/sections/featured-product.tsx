@@ -104,7 +104,7 @@ export function FeaturedProduct() {
                     transition={{ delay: 0.3 + idx * 0.06 }}
                     className="flex items-center justify-between py-3"
                   >
-                    <span className="text-white/50 text-sm font-medium tracking-wide">{spec.parameter}</span>
+                    <span className="text-white/85 text-sm font-medium tracking-wide">{spec.parameter}</span>
                     <span className="text-white text-sm font-semibold text-right">{spec.value}</span>
                   </motion.div>
                 ))}

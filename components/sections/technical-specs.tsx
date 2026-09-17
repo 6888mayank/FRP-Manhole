@@ -44,7 +44,7 @@ export function TechnicalSpecs() {
                   transition={{ delay: idx * 0.06 }}
                   className="flex items-center justify-between px-6 py-4 hover:bg-secondary/40 transition-colors"
                 >
-                  <span className="text-sm font-semibold text-muted-foreground tracking-wide">{param.parameter}</span>
+                  <span className="text-sm font-semibold text-foreground/85 tracking-wide">{param.parameter}</span>
                   <span className="text-sm font-bold text-foreground text-right">{param.value}</span>
                 </motion.div>
               ))}
@@ -66,7 +66,7 @@ export function TechnicalSpecs() {
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-foreground tracking-tight">Custom Specifications</h3>
-                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">
+                  <p className="mt-2 text-sm text-foreground/80 leading-relaxed font-normal">
                     Specifications can be customized according to project requirements. Contact our team for detailed technical specifications, load capacities, and custom design options.
                   </p>
                 </div>

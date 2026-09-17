@@ -53,7 +53,7 @@ export function SectionHeading({
           transition={{ duration: 0.5, delay: 0.05 }}
           className={cn(
             'text-2xl md:text-3xl font-bold tracking-tight',
-            light ? 'text-white/80' : 'text-muted-foreground'
+            light ? 'text-white/95' : 'text-primary/90'
           )}
         >
           {subheading}
@@ -65,7 +65,7 @@ export function SectionHeading({
         viewport={{ once: true, margin: '-50px' }}
         transition={{ duration: 0.6, delay: 0.1 }}
         className={cn(
-          'text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-balance leading-[1.1]',
+          'text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-balance leading-[1.15]',
           light ? 'text-white' : 'text-foreground'
         )}
       >
@@ -79,7 +79,7 @@ export function SectionHeading({
           transition={{ duration: 0.5, delay: 0.15 }}
           className={cn(
             'text-base md:text-lg max-w-3xl leading-relaxed',
-            light ? 'text-white/70' : 'text-muted-foreground'
+            light ? 'text-white/90' : 'text-foreground/85 font-normal'
           )}
         >
           {description}

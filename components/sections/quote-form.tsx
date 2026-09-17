@@ -123,7 +123,7 @@ export function QuoteForm() {
                   <MessageCircle className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <div className="text-white/50 text-xs tracking-widest uppercase font-medium">Call Us</div>
+                  <div className="text-white/80 text-xs tracking-widest uppercase font-semibold">Call Us</div>
                   <div className="text-white font-semibold text-sm group-hover:text-accent transition-colors">{company.phone}</div>
                 </div>
               </a>
@@ -132,7 +132,7 @@ export function QuoteForm() {
                   <MessageCircle className="w-5 h-5 text-accent" />
                 </div>
                 <div>
-                  <div className="text-white/50 text-xs tracking-widest uppercase font-medium">WhatsApp</div>
+                  <div className="text-white/80 text-xs tracking-widest uppercase font-semibold">WhatsApp</div>
                   <div className="text-white font-semibold text-sm group-hover:text-accent transition-colors">Chat with BOSS FRP</div>
                 </div>
               </a>
@@ -158,51 +158,51 @@ export function QuoteForm() {
                   <CheckCircle2 className="w-8 h-8 text-accent" />
                 </motion.div>
                 <h3 className="text-white font-bold text-xl">Enquiry Sent!</h3>
-                <p className="mt-2 text-white/60 text-sm">Our team will get back to you soon.</p>
+                <p className="mt-2 text-white/90 text-sm font-medium">Our team will get back to you soon.</p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <Label className="text-white/80 text-sm">Full Name <span className="text-accent">*</span></Label>
+                    <Label className="text-white text-sm font-semibold">Full Name <span className="text-accent">*</span></Label>
                     <Input
                       value={form.fullName}
                       onChange={(e) => updateField('fullName', e.target.value)}
                       placeholder="Your name"
-                      className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus-visible:ring-accent/40"
+                      className="bg-white/10 border-white/25 text-white placeholder:text-white/60 focus-visible:ring-accent/50"
                     />
                     {errors.fullName && <p className="text-red-400 text-xs">{errors.fullName}</p>}
                   </div>
                   <div className="space-y-1.5">
-                    <Label className="text-white/80 text-sm">Company Name</Label>
+                    <Label className="text-white text-sm font-semibold">Company Name</Label>
                     <Input
                       value={form.companyName}
                       onChange={(e) => updateField('companyName', e.target.value)}
                       placeholder="Company / Organization"
-                      className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus-visible:ring-accent/40"
+                      className="bg-white/10 border-white/25 text-white placeholder:text-white/60 focus-visible:ring-accent/50"
                     />
                   </div>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <Label className="text-white/80 text-sm">Phone Number <span className="text-accent">*</span></Label>
+                    <Label className="text-white text-sm font-semibold">Phone Number <span className="text-accent">*</span></Label>
                     <Input
                       value={form.phone}
                       onChange={(e) => updateField('phone', e.target.value)}
                       placeholder="+91 98765 43210"
-                      className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus-visible:ring-accent/40"
+                      className="bg-white/10 border-white/25 text-white placeholder:text-white/60 focus-visible:ring-accent/50"
                     />
                     {errors.phone && <p className="text-red-400 text-xs">{errors.phone}</p>}
                   </div>
                   <div className="space-y-1.5">
-                    <Label className="text-white/80 text-sm">Email Address <span className="text-accent">*</span></Label>
+                    <Label className="text-white text-sm font-semibold">Email Address <span className="text-accent">*</span></Label>
                     <Input
                       type="email"
                       value={form.email}
                       onChange={(e) => updateField('email', e.target.value)}
                       placeholder="you@company.com"
-                      className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus-visible:ring-accent/40"
+                      className="bg-white/10 border-white/25 text-white placeholder:text-white/60 focus-visible:ring-accent/50"
                     />
                     {errors.email && <p className="text-red-400 text-xs">{errors.email}</p>}
                   </div>
@@ -210,9 +210,9 @@ export function QuoteForm() {
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <Label className="text-white/80 text-sm">Product Required <span className="text-accent">*</span></Label>
+                    <Label className="text-white text-sm font-semibold">Product Required <span className="text-accent">*</span></Label>
                     <Select value={form.productRequired} onValueChange={(v) => updateField('productRequired', v)}>
-                      <SelectTrigger className="bg-white/5 border-white/15 text-white focus:ring-accent/40">
+                      <SelectTrigger className="bg-white/10 border-white/25 text-white focus:ring-accent/50">
                         <SelectValue placeholder="Select product" />
                       </SelectTrigger>
                       <SelectContent>
@@ -224,44 +224,44 @@ export function QuoteForm() {
                     {errors.productRequired && <p className="text-red-400 text-xs">{errors.productRequired}</p>}
                   </div>
                   <div className="space-y-1.5">
-                    <Label className="text-white/80 text-sm">Quantity</Label>
+                    <Label className="text-white text-sm font-semibold">Quantity</Label>
                     <Input
                       value={form.quantity}
                       onChange={(e) => updateField('quantity', e.target.value)}
                       placeholder="e.g. 100 units"
-                      className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus-visible:ring-accent/40"
+                      className="bg-white/10 border-white/25 text-white placeholder:text-white/60 focus-visible:ring-accent/50"
                     />
                   </div>
                 </div>
 
                 <div className="grid sm:grid-cols-2 gap-4">
                   <div className="space-y-1.5">
-                    <Label className="text-white/80 text-sm">Required Size</Label>
+                    <Label className="text-white text-sm font-semibold">Required Size</Label>
                     <Input
                       value={form.requiredSize}
                       onChange={(e) => updateField('requiredSize', e.target.value)}
                       placeholder="e.g. 600x600mm"
-                      className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus-visible:ring-accent/40"
+                      className="bg-white/10 border-white/25 text-white placeholder:text-white/60 focus-visible:ring-accent/50"
                     />
                   </div>
                   <div className="space-y-1.5">
-                    <Label className="text-white/80 text-sm">Application</Label>
+                    <Label className="text-white text-sm font-semibold">Application</Label>
                     <Input
                       value={form.application}
                       onChange={(e) => updateField('application', e.target.value)}
                       placeholder="e.g. Road infrastructure"
-                      className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus-visible:ring-accent/40"
+                      className="bg-white/10 border-white/25 text-white placeholder:text-white/60 focus-visible:ring-accent/50"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-1.5">
-                  <Label className="text-white/80 text-sm">Message <span className="text-accent">*</span></Label>
+                  <Label className="text-white text-sm font-semibold">Message <span className="text-accent">*</span></Label>
                   <Textarea
                     value={form.message}
                     onChange={(e) => updateField('message', e.target.value)}
                     placeholder="Tell us about your requirement..."
-                    className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus-visible:ring-accent/40 min-h-[100px] resize-none"
+                    className="bg-white/10 border-white/25 text-white placeholder:text-white/60 focus-visible:ring-accent/50 min-h-[100px] resize-none"
                   />
                   {errors.message && <p className="text-red-400 text-xs">{errors.message}</p>}
                 </div>
@@ -288,9 +288,9 @@ export function QuoteForm() {
                   href={`https://wa.me/${company.whatsapp}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 text-white/60 text-sm font-medium hover:text-accent transition-colors mt-1"
+                  className="flex items-center justify-center gap-2 text-white/85 text-sm font-medium hover:text-white transition-colors mt-1"
                 >
-                  <MessageCircle className="w-4 h-4" />
+                  <MessageCircle className="w-4 h-4 text-accent" />
                   Or chat with BOSS FRP on WhatsApp
                 </a>
               </form>

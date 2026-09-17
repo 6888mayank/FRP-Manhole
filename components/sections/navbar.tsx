@@ -51,7 +51,7 @@ export function Navbar() {
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="px-3 py-2 text-sm font-medium text-white/80 hover:text-white transition-colors rounded-md hover:bg-white/5"
+                  className="px-3 py-2 text-sm font-medium text-white/90 hover:text-white transition-colors rounded-md hover:bg-white/10"
                 >
                   {item.label}
                 </button>
@@ -107,7 +107,7 @@ export function Navbar() {
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: idx * 0.05 }}
                     onClick={() => handleNavClick(item.href)}
-                    className="text-left px-4 py-3.5 text-white/85 hover:text-white hover:bg-white/5 rounded-lg transition-colors text-base font-medium"
+                    className="text-left px-4 py-3.5 text-white/95 hover:text-white hover:bg-white/10 rounded-lg transition-colors text-base font-semibold"
                   >
                     {item.label}
                   </motion.button>
@@ -123,9 +123,9 @@ export function Navbar() {
                 </Button>
                 <a
                   href={company.phoneHref}
-                  className="flex items-center justify-center gap-2 text-white/70 text-sm"
+                  className="flex items-center justify-center gap-2 text-white/90 text-sm font-medium hover:text-white"
                 >
-                  <Phone className="w-4 h-4" />
+                  <Phone className="w-4 h-4 text-accent" />
                   {company.phone}
                 </a>
               </div>

@@ -12,7 +12,7 @@ export function Footer() {
           {/* Brand — full vertical logo fitted */}
           <div>
             <Logo variant="footer" />
-            <p className="mt-5 text-sm text-white/70 leading-relaxed">{company.positioning}. High-performance FRP manhole covers for roads, municipal, industrial and drainage infrastructure.</p>
+            <p className="mt-5 text-sm text-white/85 leading-relaxed">{company.positioning}. High-performance FRP manhole covers for roads, municipal, industrial and drainage infrastructure.</p>
           </div>
 
           {/* Quick links */}
@@ -21,7 +21,7 @@ export function Footer() {
             <ul className="space-y-2.5">
               {navItems.map((item) => (
                 <li key={item.href}>
-                  <a href={item.href} className="text-sm text-white/60 hover:text-white transition-colors">
+                  <a href={item.href} className="text-sm text-white/80 hover:text-accent transition-colors font-medium">
                     {item.label}
                   </a>
                 </li>
@@ -35,7 +35,7 @@ export function Footer() {
             <ul className="space-y-2.5">
               {products.map((p) => (
                 <li key={p.id}>
-                  <a href="#products" className="text-sm text-white/60 hover:text-white transition-colors">
+                  <a href="#products" className="text-sm text-white/80 hover:text-accent transition-colors font-medium">
                     {p.name}
                   </a>
                 </li>
@@ -49,26 +49,26 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex gap-3 text-sm">
                 <MapPin className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                <span className="text-white/60 leading-relaxed">{company.address}</span>
+                <span className="text-white/85 leading-relaxed">{company.address}</span>
               </li>
               <li>
-                <a href={company.phoneHref} className="flex gap-3 text-sm text-white/60 hover:text-white transition-colors">
+                <a href={company.phoneHref} className="flex gap-3 text-sm text-white/85 hover:text-accent transition-colors font-medium">
                   <Phone className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
                   {company.phone}
                 </a>
               </li>
               <li>
-                <a href={company.emailHref} className="flex gap-3 text-sm text-white/60 hover:text-white transition-colors break-all">
+                <a href={company.emailHref} className="flex gap-3 text-sm text-white/85 hover:text-accent transition-colors font-medium break-all">
                   <Mail className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
                   {company.email}
                 </a>
               </li>
             </ul>
-            <p className="mt-4 text-xs text-white/40">{company.businessHours}</p>
+            <p className="mt-4 text-xs text-white/70 font-medium">{company.businessHours}</p>
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/40">
+        <div className="mt-10 pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-white/65">
           <span>© {year} {company.name}. All rights reserved.</span>
           <span>Engineered for strength, durability and easy handling.</span>
         </div>

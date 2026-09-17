@@ -47,7 +47,7 @@ export function WhyFRP() {
                     <Icon className="w-6 h-6 text-primary group-hover:text-accent transition-colors" />
                   </div>
                   <h3 className="text-lg font-bold tracking-tight text-foreground">{item.title}</h3>
-                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+                  <p className="mt-2 text-sm text-foreground/80 leading-relaxed font-normal">{item.description}</p>
                 </div>
               </motion.div>
             );

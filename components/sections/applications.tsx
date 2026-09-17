@@ -49,20 +49,12 @@ export function Applications() {
                   <Icon className="w-5 h-5 text-white" />
                 </div>
 
-                {/* Name - bottom */}
-                <div className="absolute bottom-0 left-0 right-0 p-3 md:p-4">
-                  <h3 className="text-white font-bold text-xs md:text-sm tracking-tight leading-tight">
+                {/* Name & description - bottom */}
+                <div className="absolute bottom-0 left-0 right-0 p-3.5 md:p-4 bg-gradient-to-t from-black/90 via-black/60 to-transparent">
+                  <h3 className="text-white font-bold text-sm md:text-base tracking-tight leading-snug">
                     {app.name}
                   </h3>
-                  {/* Description slides up on hover */}
-                  <motion.p
-                    initial={{ opacity: 0, height: 0 }}
-                    whileHover={{ opacity: 1, height: 'auto' }}
-                    className="text-white/70 text-[10px] md:text-xs leading-snug overflow-hidden mt-0 group-hover:mt-1.5 group-hover:opacity-100 transition-all duration-300"
-                  >
-                    {app.description}
-                  </motion.p>
-                  <p className="text-white/70 text-[10px] md:text-xs leading-snug overflow-hidden h-0 group-hover:h-auto group-hover:mt-1.5 transition-all duration-300">
+                  <p className="text-white/90 text-xs md:text-sm leading-relaxed mt-1.5 opacity-90 group-hover:opacity-100 transition-opacity">
                     {app.description}
                   </p>
                 </div>

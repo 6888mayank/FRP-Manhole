@@ -78,7 +78,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.45 }}
-            className="mt-4 text-base md:text-lg text-white/70 max-w-2xl leading-relaxed"
+            className="mt-4 text-base md:text-lg text-white/95 max-w-2xl leading-relaxed drop-shadow-sm font-normal"
           >
             {company.name} manufactures durable, lightweight and corrosion-resistant FRP manhole covers engineered for demanding infrastructure, construction and industrial applications.
           </motion.p>
@@ -141,11 +141,11 @@ export function Hero() {
         transition={{ delay: 1.2 }}
         className="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-1"
       >
-        <span className="text-white/50 text-xs tracking-widest uppercase">Scroll</span>
+        <span className="text-white/80 text-xs tracking-widest uppercase font-semibold">Scroll</span>
         <motion.div
           animate={{ y: [0, 6, 0] }}
           transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
-          className="text-white/60"
+          className="text-white/85"
         >
           <ChevronDown className="w-5 h-5" />
         </motion.div>

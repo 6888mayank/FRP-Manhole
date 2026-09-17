@@ -34,7 +34,7 @@ export function Comparison() {
               <span className="text-accent">BOSS FRP</span>
               <div className="absolute bottom-0 left-0 right-0 h-1 bg-accent" />
             </div>
-            <div className="p-4 md:p-6 font-bold text-sm md:text-base text-center text-white/60">Traditional Metal</div>
+            <div className="p-4 md:p-6 font-bold text-sm md:text-base text-center text-white/85">Traditional Metal</div>
           </div>
 
           {/* Rows */}
@@ -58,8 +58,8 @@ export function Comparison() {
                 </span>
               </div>
               <div className="p-4 md:p-5 text-center flex items-center justify-center">
-                <span className="flex items-center gap-2 text-sm md:text-base text-muted-foreground">
-                  <X className="w-4 h-4 text-muted-foreground/50 flex-shrink-0" />
+                <span className="flex items-center gap-2 text-sm md:text-base text-foreground/80 font-medium">
+                  <X className="w-4 h-4 text-red-500/80 flex-shrink-0" />
                   <span className="hidden sm:inline">{row.traditional}</span>
                   <span className="sm:hidden">{row.traditional.split(' ')[0]}</span>
                 </span>

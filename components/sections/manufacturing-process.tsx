@@ -44,7 +44,7 @@ export function ManufacturingProcess() {
                 <h3 className="text-white font-bold text-sm md:text-base tracking-wide uppercase mb-2">
                   {step.title}
                 </h3>
-                <p className="text-white/55 text-sm leading-relaxed">{step.description}</p>
+                <p className="text-white/90 text-sm md:text-base leading-relaxed">{step.description}</p>
               </div>
 
               {/* Connecting vertical line for mobile */}

@@ -38,14 +38,14 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
 
       {/* Content */}
       <div className="flex flex-col flex-1 p-5">
-        <p className="text-sm text-muted-foreground leading-relaxed">{product.description}</p>
+        <p className="text-sm text-foreground/80 leading-relaxed font-normal">{product.description}</p>
 
         {/* Features */}
         <div className="mt-4 flex flex-wrap gap-1.5">
           {product.features.map((feature) => (
             <span
               key={feature}
-              className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-secondary text-xs font-medium text-foreground/80"
+              className="inline-flex items-center gap-1 px-2 py-1 rounded-md bg-secondary text-xs font-semibold text-foreground"
             >
               <Check className="w-3 h-3 text-accent" />
               {feature}

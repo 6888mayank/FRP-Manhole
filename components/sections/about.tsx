@@ -45,7 +45,7 @@ export function About() {
                 <Shield className="w-5 h-5 text-accent" />
                 <span className="text-white font-black text-lg tracking-wide">BOSS FRP</span>
               </div>
-              <span className="text-white/60 text-xs tracking-widest uppercase font-medium">
+              <span className="text-white/90 text-xs tracking-widest uppercase font-semibold">
                 Engineered for Performance
               </span>
             </motion.div>
@@ -66,7 +66,7 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed"
+              className="mt-5 text-base md:text-lg text-foreground/90 leading-relaxed font-normal"
             >
               {company.name} is focused on manufacturing high-performance FRP manhole covers and infrastructure solutions designed for strength, durability and ease of handling.
             </motion.p>
@@ -75,7 +75,7 @@ export function About() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="mt-3 text-sm md:text-base text-muted-foreground/80 leading-relaxed"
+              className="mt-3 text-sm md:text-base text-foreground/80 leading-relaxed font-normal"
             >
               The company focuses on quality FRP materials, strong structural design, accurate dimensions, reliable finishing, custom requirements, project-based manufacturing and infrastructure applications.
             </motion.p>
