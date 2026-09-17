@@ -23,13 +23,13 @@ export function About() {
             transition={{ duration: 0.7 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl bg-[#d4c5a5]">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-card group">
               <img
-                src="/frp-cover.png"
-                alt="FRP manhole cover DIA 560 2.5T — R.K. — BOSS FRP"
-                className="w-full h-[400px] md:h-[520px] object-contain p-6 bg-[#c8b89a]"
+                src="/about-frp-cover.jpg"
+                alt="BOSS FRP Manhole Cover DIA 560 2.5T Heavy Duty Composite Infrastructure Cover"
+                className="w-full h-[420px] md:h-[530px] object-cover object-center transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10 pointer-events-none" />
             </div>
 
             {/* Floating badge */}
