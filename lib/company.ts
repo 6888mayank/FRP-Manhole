@@ -127,7 +127,7 @@ export const products: Product[] = [
     id: 'drainage-covers',
     name: 'FRP Drainage Covers',
     description: 'Durable FRP drainage covers designed for drainage channels, utility areas and infrastructure projects.',
-    image: 'https://images.pexels.com/photos/37627673/pexels-photo-37627673.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/frp-drainage-cover.jpg',
     features: ['Weather Resistant', 'Lightweight', 'Easy Handling', 'Low Maintenance'],
   },
   {
