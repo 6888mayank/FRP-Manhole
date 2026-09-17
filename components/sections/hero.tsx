@@ -20,9 +20,9 @@ export function Hero() {
         className="absolute inset-0 z-0"
       >
         <img
-          src="https://images.pexels.com/photos/5828261/pexels-photo-5828261.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="FRP manhole cover installed on asphalt road infrastructure"
-          className="w-full h-full object-cover"
+          src="/hero-bg.jpg"
+          alt="BOSS FRP 450x600 B125 manhole cover installed on asphalt road infrastructure"
+          className="w-full h-full object-cover object-[50%_65%]"
         />
       </motion.div>
 

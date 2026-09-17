@@ -34,10 +34,10 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://images.pexels.com/photos/5828261/pexels-photo-5828261.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-        width: 940,
-        height: 650,
-        alt: 'FRP Manhole Cover on Asphalt Road',
+        url: '/hero-bg.jpg',
+        width: 1024,
+        height: 767,
+        alt: 'BOSS FRP 450x600 B125 Manhole Cover on Asphalt Road Infrastructure',
       },
     ],
   },
@@ -46,11 +46,7 @@ export const metadata: Metadata = {
     title: 'BOSS FRP MANHOLES | FRP Manhole Covers Manufacturer',
     description:
       'Premium FRP manhole covers and infrastructure solutions engineered for strength, durability and easy handling.',
-    images: [
-      {
-        url: 'https://images.pexels.com/photos/5828261/pexels-photo-5828261.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-      },
-    ],
+    images: ['/hero-bg.jpg'],
   },
 };
 
