@@ -153,7 +153,7 @@ export const products: Product[] = [
     id: 'heavy-duty-covers',
     name: 'Heavy Duty FRP Covers',
     description: 'Heavy-duty FRP covers engineered for demanding applications and project-specific requirements.',
-    image: 'https://images.pexels.com/photos/30425584/pexels-photo-30425584.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
+    image: '/frp-heavy-duty-cover.jpg',
     features: ['High Load Capacity', 'Heavy Duty', 'Reinforced', 'Project Ready'],
   },
   {
