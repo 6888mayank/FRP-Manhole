@@ -80,7 +80,7 @@ export const company = {
   whatsapp: '917082669618',
   email: 'rkchemicals8181@gmail.com',
   emailHref: 'mailto:rkchemicals8181@gmail.com',
-  address: 'Ward No- 10, Near Gali India, Village Jakhopur, Mohammadpur Gujar, Gurugram, Haryana - 122103',
+  address: 'Ward No- 10, Near Gali India, Sohna, Gurugram, Haryana - 122103',
   mapUrl: 'https://maps.google.com/?q=28.229321,77.068321',
   coordinates: {
     lat: 28.229321,
@@ -125,7 +125,7 @@ export const products: Product[] = [
     id: 'manhole-covers',
     name: 'FRP Manhole Covers',
     description: 'High-strength FRP manhole covers designed for reliable performance across infrastructure and construction applications.',
-    image: '/frp-cover.png',
+    image: '/frp-manhole-cover-warehouse.jpg',
     features: ['Lightweight', 'High Strength', 'Corrosion Resistant', 'Anti-Slip Surface', 'Custom Sizes'],
   },
   {

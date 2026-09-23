@@ -36,3 +36,7 @@ yarn-error.log*
 next-env.d.ts
 tsconfig.tsbuildinfo
 .env*
+
+# backups and raw media
+*.backup.*
+*-raw.*

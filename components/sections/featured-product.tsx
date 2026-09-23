@@ -44,9 +44,9 @@ export function FeaturedProduct() {
             <div className="relative z-10 group">
               <img
                 src="/frp-cover-signature.png"
-                alt="FRP Manhole Cover DIA 560 2.5T — R.K. Signature Product by BOSS FRP MANHOLES"
-                width={792}
-                height={792}
+                alt="BOSS-FRP DIA 600 D400 Heavy Duty Signature Manhole Cover"
+                width={1024}
+                height={1024}
                 className="w-[280px] h-[280px] md:w-[380px] md:h-[380px] object-contain rounded-full shadow-2xl shadow-black/80 border-4 border-white/20 drop-shadow-[0_25px_40px_rgba(0,0,0,0.8)] transition-transform duration-700 group-hover:scale-105"
               />
             </div>

@@ -26,7 +26,7 @@ export function About() {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-border/50 bg-card group">
               <img
                 src="/about-frp-cover.jpg"
-                alt="BOSS FRP Manhole Cover DIA 560 2.5T Heavy Duty Composite Infrastructure Cover"
+                alt="Real on-site road installation of BOSS FRP Heavy Duty Manhole Cover"
                 className="w-full h-[420px] md:h-[530px] object-cover object-center transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10 pointer-events-none" />

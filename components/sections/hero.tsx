@@ -21,8 +21,8 @@ export function Hero() {
       >
         <img
           src="/hero-bg.jpg"
-          alt="BOSS FRP 450x600 B125 manhole cover installed on asphalt road infrastructure"
-          className="w-full h-full object-cover object-[50%_65%]"
+          alt="BOSS-FRP 900x900 D400 Heavy Duty Double Manhole Cover"
+          className="w-full h-full object-cover object-center"
         />
       </motion.div>
 
