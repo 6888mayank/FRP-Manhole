@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, ShieldCheck, Award, FileCheck, FileText, CheckCircle2 } from 'lucide-react';
 import { company, navItems, products } from '@/lib/company';
 import { Logo } from '@/components/shared/logo';
 
@@ -72,6 +72,145 @@ export function Footer() {
               </li>
             </ul>
             <p className="mt-4 text-xs text-white/70 font-medium">{company.businessHours}</p>
+          </div>
+        </div>
+
+        {/* Documents & Compliance Panel */}
+        <div className="mt-12 pt-8 border-t border-white/10">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6">
+            <div>
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="w-5 h-5 text-accent flex-shrink-0" />
+                <h3 className="text-white font-bold text-sm tracking-widest uppercase">
+                  Official Certificates &amp; Documents
+                </h3>
+              </div>
+              <p className="text-xs text-white/70 mt-1">
+                Verified government registrations, quality testing reports and statutory compliance records.
+              </p>
+            </div>
+            <span className="inline-flex items-center gap-1.5 text-[11px] font-semibold text-accent bg-accent/10 border border-accent/25 px-3 py-1 rounded-full self-start sm:self-auto">
+              <CheckCircle2 className="w-3.5 h-3.5" />
+              Verified &amp; Certified Manufacturer
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            {/* 1. MSME Certificate */}
+            <a
+              href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent('Hello BOSS FRP, I would like to request a verified copy of your MSME Registration Certificate.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col justify-between p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-accent/40 transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-0.5"
+            >
+              <div>
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <div className="w-9 h-9 rounded-lg bg-accent/15 border border-accent/30 flex items-center justify-center text-accent group-hover:scale-105 transition-transform">
+                    <Award className="w-4 h-4" />
+                  </div>
+                  <span className="text-[10px] font-bold tracking-wider uppercase text-accent bg-accent/10 px-2 py-0.5 rounded">
+                    Udyam Govt
+                  </span>
+                </div>
+                <h4 className="text-white font-bold text-sm group-hover:text-accent transition-colors">
+                  MSME Certificate
+                </h4>
+                <p className="text-[11px] text-white/60 mt-1 leading-relaxed">
+                  Ministry of MSME, Govt. of India enterprise registration.
+                </p>
+              </div>
+              <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-white/80 font-medium group-hover:text-accent">
+                <span>Request Official Copy</span>
+                <FileText className="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity" />
+              </div>
+            </a>
+
+            {/* 2. Incorporation Certificate */}
+            <a
+              href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent('Hello BOSS FRP, I would like to request a copy of your Certificate of Incorporation.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col justify-between p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-accent/40 transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-0.5"
+            >
+              <div>
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <div className="w-9 h-9 rounded-lg bg-accent/15 border border-accent/30 flex items-center justify-center text-accent group-hover:scale-105 transition-transform">
+                    <FileCheck className="w-4 h-4" />
+                  </div>
+                  <span className="text-[10px] font-bold tracking-wider uppercase text-accent bg-accent/10 px-2 py-0.5 rounded">
+                    RoC / MCA
+                  </span>
+                </div>
+                <h4 className="text-white font-bold text-sm group-hover:text-accent transition-colors">
+                  Incorporation Certificate
+                </h4>
+                <p className="text-[11px] text-white/60 mt-1 leading-relaxed">
+                  Ministry of Corporate Affairs registered manufacturing entity.
+                </p>
+              </div>
+              <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-white/80 font-medium group-hover:text-accent">
+                <span>Request Official Copy</span>
+                <FileText className="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity" />
+              </div>
+            </a>
+
+            {/* 3. Testing Report */}
+            <a
+              href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent('Hello BOSS FRP, please share the NABL lab testing report & load test certificates for your FRP manhole covers.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col justify-between p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-accent/40 transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-0.5"
+            >
+              <div>
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <div className="w-9 h-9 rounded-lg bg-accent/15 border border-accent/30 flex items-center justify-center text-accent group-hover:scale-105 transition-transform">
+                    <ShieldCheck className="w-4 h-4" />
+                  </div>
+                  <span className="text-[10px] font-bold tracking-wider uppercase text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">
+                    D400 40T
+                  </span>
+                </div>
+                <h4 className="text-white font-bold text-sm group-hover:text-accent transition-colors">
+                  Testing Report
+                </h4>
+                <p className="text-[11px] text-white/60 mt-1 leading-relaxed">
+                  NABL lab load capacity testing per IS 1726 &amp; EN 124 standards.
+                </p>
+              </div>
+              <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-white/80 font-medium group-hover:text-accent">
+                <span>View Load Test Specs</span>
+                <FileText className="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity" />
+              </div>
+            </a>
+
+            {/* 4. GST Allotment Papers */}
+            <a
+              href={`https://wa.me/${company.whatsapp}?text=${encodeURIComponent('Hello BOSS FRP, please share your GST allotment papers and billing details.')}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex flex-col justify-between p-4 rounded-xl bg-white/5 hover:bg-white/10 border border-white/10 hover:border-accent/40 transition-all duration-300 shadow-sm hover:shadow-lg hover:-translate-y-0.5"
+            >
+              <div>
+                <div className="flex items-center justify-between gap-2 mb-3">
+                  <div className="w-9 h-9 rounded-lg bg-accent/15 border border-accent/30 flex items-center justify-center text-accent group-hover:scale-105 transition-transform">
+                    <FileText className="w-4 h-4" />
+                  </div>
+                  <span className="text-[10px] font-bold tracking-wider uppercase text-accent bg-accent/10 px-2 py-0.5 rounded">
+                    GSTIN
+                  </span>
+                </div>
+                <h4 className="text-white font-bold text-sm group-hover:text-accent transition-colors">
+                  GST Allotment Papers
+                </h4>
+                <p className="text-[11px] text-white/60 mt-1 leading-relaxed">
+                  Official Goods and Services Tax allotment certificate.
+                </p>
+              </div>
+              <div className="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px] text-white/80 font-medium group-hover:text-accent">
+                <span>Request Tax Invoice / GST</span>
+                <FileText className="w-3.5 h-3.5 opacity-70 group-hover:opacity-100 transition-opacity" />
+              </div>
+            </a>
           </div>
         </div>
 
