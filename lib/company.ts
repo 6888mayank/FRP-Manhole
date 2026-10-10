@@ -4,6 +4,7 @@ export interface Product {
   description: string;
   image: string;
   features: string[];
+  imagePosition?: string;
 }
 
 export interface Application {
@@ -146,7 +147,8 @@ export const products: Product[] = [
     id: 'chamber-covers',
     name: 'FRP Chamber Covers',
     description: 'Heavy-duty FRP chamber covers engineered for petrol stations, electrical, telecom, drainage and utility infrastructure.',
-    image: '/frp-chamber-cover.jpg',
+    image: '/frp-chamber-cover-petrol-pump.jpg',
+    imagePosition: 'object-[center_75%]',
     features: ['Petrol Station Grade', 'High Load Capacity', 'Non-Conductive', 'Corrosion Proof'],
   },
   {

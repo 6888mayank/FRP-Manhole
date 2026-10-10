@@ -5,6 +5,7 @@ import { ArrowRight, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { SectionHeading } from '@/components/shared/section-heading';
 import { products, type Product } from '@/lib/company';
+import { cn } from '@/lib/utils';
 
 function ProductCard({ product, index }: { product: Product; index: number }) {
   const scrollTo = (href: string) => {
@@ -21,17 +22,20 @@ function ProductCard({ product, index }: { product: Product; index: number }) {
       className="group relative flex flex-col rounded-2xl bg-card border border-border/60 overflow-hidden shadow-sm hover:shadow-xl transition-shadow"
     >
       {/* Image */}
-      <div className="relative h-52 overflow-hidden">
+      <div className="relative h-56 overflow-hidden">
         <img
           src={product.image}
           alt={`${product.name} - FRP infrastructure product by BOSS FRP`}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          className={cn(
+            'w-full h-full object-cover transition-transform duration-700 group-hover:scale-105',
+            product.imagePosition || 'object-center'
+          )}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-        <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-black/50 backdrop-blur-sm text-white text-xs font-bold tracking-wider">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none" />
+        <div className="absolute top-3 left-3 px-2.5 py-1 rounded-md bg-black/60 backdrop-blur-sm text-white text-xs font-bold tracking-wider">
           {String(index + 1).padStart(2, '0')}
         </div>
-        <h3 className="absolute bottom-3 left-4 right-4 text-white font-bold text-lg tracking-tight">
+        <h3 className="absolute bottom-3 left-4 right-4 text-white font-bold text-lg tracking-tight drop-shadow-md">
           {product.name}
         </h3>
       </div>
