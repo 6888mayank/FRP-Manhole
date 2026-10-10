@@ -145,9 +145,9 @@ export const products: Product[] = [
   {
     id: 'chamber-covers',
     name: 'FRP Chamber Covers',
-    description: 'Reliable FRP chamber covers for electrical, telecom, drainage and utility infrastructure.',
+    description: 'Heavy-duty FRP chamber covers engineered for petrol stations, electrical, telecom, drainage and utility infrastructure.',
     image: '/frp-chamber-cover.jpg',
-    features: ['Electrical Grade', 'Telecom Ready', 'Non-Conductive', 'Custom Fit'],
+    features: ['Petrol Station Grade', 'High Load Capacity', 'Non-Conductive', 'Corrosion Proof'],
   },
   {
     id: 'heavy-duty-covers',
