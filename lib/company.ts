@@ -159,9 +159,9 @@ export const products: Product[] = [
   {
     id: 'custom-frp',
     name: 'Custom FRP Products',
-    description: 'Customized FRP solutions manufactured according to required dimensions, design and application.',
-    image: '/custom-frp-bg.jpg',
-    features: ['Custom Dimensions', 'Custom Design', 'Application Specific', 'Project Based'],
+    description: 'Customized FRP solutions including utility chambers, drainage channels and architectural products manufactured to project requirements.',
+    image: '/custom-frp-products.jpg',
+    features: ['Custom Dimensions', 'Chambers & Boxes', 'Drainage Channels', 'Architectural FRP'],
   },
 ];
 
